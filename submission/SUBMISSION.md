@@ -2,7 +2,7 @@
 
 Submit before 23 October 2026, 11:59 p.m. PT on the hackathon page.
 
-- Repository: <./kit publish ... fills this in>
+- Repository: https://github.com/HEAVENLYBEING112/sourcesignal-ai
 - Video: https://www.youtube.com/watch?v=qReKeDSPPxA
 - Article: https://builder.aws.com/content/3L3wrt1qJxKgJE6Myjaaq2BY2qJ/sourcesignal-ai-building-an-evidence-gated-research-agent-with-strands-decider-2b
 - Tags: #strands-decider-2b #policy
