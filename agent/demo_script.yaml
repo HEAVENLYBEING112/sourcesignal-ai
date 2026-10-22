@@ -1,0 +1,23 @@
+# What the demo video shows. Each turn is typed into the demo UI against your real agent.
+# `narrate` describes the situation only; make_video.py appends what the decider actually decided,
+# so the narration never claims something that did not happen. Keep it under about 2.5 minutes.
+title: "SourceSignal AI: Evidence-Gated Research Agent"
+# The project slide (shown after the title): a one-line pitch and the features worth showing.
+pitch: "An evidence-gated research agent that validates evidence sufficiency and detects contradictions with Strands Decider before answering."
+features:
+  - "retrieve verified facts and citations from a curated evidence corpus"
+  - "evaluate evidence sufficiency, relevance, and contradictions with Strands Decider 2B"
+  - "abstain transparently when evidence is contradictory or missing"
+  - "run on Amazon Bedrock AgentCore Runtime paired with Amazon Bedrock"
+# eager: false shows normal evidence-gating behavior.
+eager: false
+intro: "SourceSignal AI is an evidence-gated research agent powered by Amazon Bedrock. Strands Decider evaluates evidence sufficiency and contradiction policy before any answer is generated."
+intro_normal: "SourceSignal AI runs on Amazon Bedrock AgentCore Runtime and talks through Amazon Bedrock. Strands Decider gates research answers through a strict evidence policy."
+turns:
+  - say: "What are the scaling and memory characteristics of UltraAttention-v2?"
+    narrate: "The agent retrieves supporting benchmarks from SRC-101 and the policy approves answering with verified citations."
+  - say: "Did Project Helios verify net energy gain in its 2026 stellarator trials?"
+    narrate: "The agent detects contradictory findings between SRC-201 and SRC-202, so the policy mandates abstention."
+  - say: "What are the quarterly semiconductor export figures for Mars Base Alpha?"
+    narrate: "No relevant evidence exists in the corpus, so the policy prevents hallucination and abstains."
+outro: "One forward pass per decision with calibrated confidence, zero hallucinated citations, and Amazon Bedrock for grounded synthesis."

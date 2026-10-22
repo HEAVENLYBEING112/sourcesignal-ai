@@ -1,0 +1,102 @@
+[
+ {
+  "start": 2.13339900970459,
+  "end": 19.394968032836914,
+  "out": {
+   "reply": "Based on the retrieved evidence, here are the scaling and memory characteristics of UltraAttention-v2:\n\n**Verified Facts:**\n1. UltraAttention-v2 achieves 1M token context processing by utilizing structured block-sparse matrix kernels [SRC-101].\n2. It sustains 2,400 tokens/second throughput on standard synthetic retrieval and long-document reasoning benchmarks [SRC-101].\n3. It reduces active KV-cache GPU memory footprints by 68% compared to standard flash-attention baselines [SRC-101].\n4. Under prolonged continuous inference workloads exceeding 500k context lengths, UltraAttention-v2 exhibits severe memory fragmentation and thermal throttling on PCIe-based accelerator cards [SRC-102].\n5. Effective sustained throughput drops by 42% under prolonged workloads unless active liquid cooling and custom SRAM buffer management are deployed [SRC-102].\n\n**Unresolved Claims:**\n- None identified in the provided evidence.\n\nThese facts are directly supported by the provided evidence snippets and their respective source IDs.",
+   "decisions": [
+    {
+     "pattern": "#policy",
+     "stage": "evidence_policy",
+     "action": "answer",
+     "verdict": "answer",
+     "evidence_sufficient": 0.906,
+     "contradictory": 0.317,
+     "confidence": 0.652,
+     "reason": "Sufficient and consistent evidence verified to answer query.",
+     "retrieval_count": 1,
+     "max_retrievals": 2,
+     "decider_ms": 3532
+    }
+   ],
+   "model_id": "us.amazon.nova-pro-v1:0",
+   "latency_ms": 6359,
+   "agent": "SourceSignal AI: Evidence-Gated Research Agent",
+   "eager": false,
+   "served_by": "Amazon Bedrock AgentCore Runtime"
+  },
+  "say": "What are the scaling and memory characteristics of UltraAttention-v2?",
+  "narrate": "The agent retrieves supporting benchmarks from SRC-101 and the policy approves answering with verified citations."
+ },
+ {
+  "start": 19.394986867904663,
+  "end": 27.428152084350586,
+  "out": {
+   "reply": "SourceSignal Policy: ABSTAIN (Contradictory Evidence Detected)\n\nThe agent retrieved evidence for 'Did Project Helios verify net energy gain in its 2026 stellarator trials?' but detected conflicting claims across sources:\n- [SRC-201] Project Helios Pulsed Stellarator Net Energy Gain Claim: Project Helios reported achieving Q_plasma of 1.25 in its pulsed stellarator reactor in February 2026. The team reported a measured net electrical output of 14.2 MJ from an 11.3 MJ magnetic compression pulse over a 400ms steady-state confinement window.\n- [SRC-202] Independent Audit and Calorimetry Calibration of Project Helios: An independent physical audit of Project Helios found systematic sensor drift and calibration flaws in diagnostic thermal sensors. Recalculated neutron spectroscopy and heat balance data proved actual energy output was 10.1 MJ against 11.3 MJ input (Q_plasma = 0.89), directly disproving claims of net energy gain.\n\nPolicy Action: In accordance with SourceSignal's evidence policy, the agent abstains from presenting a conclusive answer because verified sources disagree on critical facts. The conflicting findings remain unresolved without an independent audit.",
+   "decisions": [
+    {
+     "pattern": "#policy",
+     "stage": "evidence_policy",
+     "action": "abstain",
+     "verdict": "abstain",
+     "evidence_sufficient": 0.946,
+     "contradictory": 0.864,
+     "confidence": 0.628,
+     "reason": "Contradictory evidence detected across sources; policy mandates abstention.",
+     "retrieval_count": 1,
+     "max_retrievals": 2,
+     "decider_ms": 3676
+    }
+   ],
+   "model_id": "us.amazon.nova-pro-v1:0",
+   "latency_ms": 3676,
+   "agent": "SourceSignal AI: Evidence-Gated Research Agent",
+   "eager": false,
+   "served_by": "Amazon Bedrock AgentCore Runtime"
+  },
+  "say": "Did Project Helios verify net energy gain in its 2026 stellarator trials?",
+  "narrate": "The agent detects contradictory findings between SRC-201 and SRC-202, so the policy mandates abstention."
+ },
+ {
+  "start": 27.428154945373535,
+  "end": 36.16852402687073,
+  "out": {
+   "reply": "SourceSignal Policy: ABSTAIN (Insufficient Evidence)\n\nThe agent executed 2 retrieval attempts for 'What are the quarterly semiconductor export figures for Mars Base Alpha?', but no verified sources in the corpus provide sufficient facts to answer the question.\n\nPolicy Action: To guarantee zero hallucination, the agent abstains from speculating or generating an ungrounded response.",
+   "decisions": [
+    {
+     "pattern": "#policy",
+     "stage": "evidence_policy",
+     "action": "retrieve",
+     "verdict": "retrieve",
+     "evidence_sufficient": 0.171,
+     "contradictory": 0.304,
+     "confidence": 0.839,
+     "reason": "Evidence is incomplete; initiating another retrieval attempt.",
+     "retrieval_count": 1,
+     "max_retrievals": 2,
+     "decider_ms": 2228
+    },
+    {
+     "pattern": "#policy",
+     "stage": "evidence_policy",
+     "action": "abstain",
+     "verdict": "abstain",
+     "evidence_sufficient": 0.177,
+     "contradictory": 0.3,
+     "confidence": 0.549,
+     "reason": "Insufficient evidence found in corpus after retrieval attempts.",
+     "retrieval_count": 2,
+     "max_retrievals": 2,
+     "decider_ms": 2184
+    }
+   ],
+   "model_id": "us.amazon.nova-pro-v1:0",
+   "latency_ms": 4412,
+   "agent": "SourceSignal AI: Evidence-Gated Research Agent",
+   "eager": false,
+   "served_by": "Amazon Bedrock AgentCore Runtime"
+  },
+  "say": "What are the quarterly semiconductor export figures for Mars Base Alpha?",
+  "narrate": "No relevant evidence exists in the corpus, so the policy prevents hallucination and abstains."
+ }
+]

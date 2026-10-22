@@ -1,0 +1,566 @@
+{
+ "decider_model": "strands-decider-2b-hobson-v19",
+ "rows": [
+  {
+   "i": 0,
+   "expected": {
+    "evidence_sufficient": "no",
+    "contradictory": "yes",
+    "evidence_action": "abstain"
+   },
+   "decider": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 0.9351
+    },
+    "contradictory": {
+     "label": "yes",
+     "confidence": 0.8574
+    },
+    "evidence_action": {
+     "label": "answer",
+     "confidence": 0.5182
+    }
+   },
+   "decider_ms": 4272.671124999761,
+   "decider_server_ms": 3061.8,
+   "llm": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 0.95
+    },
+    "contradictory": {
+     "label": "yes",
+     "confidence": 1.0
+    },
+    "evidence_action": {
+     "label": "abstain",
+     "confidence": 0.98
+    }
+   },
+   "llm_ms": 49804.81483299809,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 1,
+   "expected": {
+    "evidence_sufficient": "yes",
+    "contradictory": "no",
+    "evidence_action": "answer"
+   },
+   "decider": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 0.919
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 0.8779
+    },
+    "evidence_action": {
+     "label": "answer",
+     "confidence": 0.8878
+    }
+   },
+   "decider_ms": 3420.128208003007,
+   "decider_server_ms": 2692.1,
+   "llm": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 1.0
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "evidence_action": {
+     "label": "answer",
+     "confidence": 1.0
+    }
+   },
+   "llm_ms": 21937.994125008117,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 2,
+   "expected": {
+    "evidence_sufficient": "yes",
+    "contradictory": "no",
+    "evidence_action": "answer"
+   },
+   "decider": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 0.9144
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 0.8536
+    },
+    "evidence_action": {
+     "label": "answer",
+     "confidence": 0.7627
+    }
+   },
+   "decider_ms": 4207.2269579948625,
+   "decider_server_ms": 3143.1,
+   "llm": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 0.95
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "evidence_action": {
+     "label": "answer",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 22562.446790994727,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 3,
+   "expected": {
+    "evidence_sufficient": "no",
+    "contradictory": "no",
+    "evidence_action": "abstain"
+   },
+   "decider": {
+    "evidence_sufficient": {
+     "label": "no",
+     "confidence": 0.7994
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 0.6741
+    },
+    "evidence_action": {
+     "label": "retrieve",
+     "confidence": 0.6395
+    }
+   },
+   "decider_ms": 3507.0149169914657,
+   "decider_server_ms": 2534.7,
+   "llm": {
+    "evidence_sufficient": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "evidence_action": {
+     "label": "retrieve",
+     "confidence": 1.0
+    }
+   },
+   "llm_ms": 50456.10516599845,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 4,
+   "expected": {
+    "evidence_sufficient": "no",
+    "contradictory": "yes",
+    "evidence_action": "abstain"
+   },
+   "decider": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 0.8208
+    },
+    "contradictory": {
+     "label": "yes",
+     "confidence": 0.5384
+    },
+    "evidence_action": {
+     "label": "retrieve",
+     "confidence": 0.573
+    }
+   },
+   "decider_ms": 4194.856999994954,
+   "decider_server_ms": 3174.0,
+   "llm": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 0.95
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 0.98
+    },
+    "evidence_action": {
+     "label": "answer",
+     "confidence": 0.92
+    }
+   },
+   "llm_ms": 33995.66233299265,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 5,
+   "expected": {
+    "evidence_sufficient": "yes",
+    "contradictory": "no",
+    "evidence_action": "answer"
+   },
+   "decider": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 0.9166
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 0.5066
+    },
+    "evidence_action": {
+     "label": "answer",
+     "confidence": 0.7984
+    }
+   },
+   "decider_ms": 4093.1767500005662,
+   "decider_server_ms": 3211.2,
+   "llm": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 1.0
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "evidence_action": {
+     "label": "answer",
+     "confidence": 1.0
+    }
+   },
+   "llm_ms": 22497.070500001428,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 6,
+   "expected": {
+    "evidence_sufficient": "yes",
+    "contradictory": "no",
+    "evidence_action": "answer"
+   },
+   "decider": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 0.9094
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 0.8989
+    },
+    "evidence_action": {
+     "label": "answer",
+     "confidence": 0.9321
+    }
+   },
+   "decider_ms": 4224.289999998291,
+   "decider_server_ms": 3193.2,
+   "llm": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 0.95
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "evidence_action": {
+     "label": "answer",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 24472.769333006,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 7,
+   "expected": {
+    "evidence_sufficient": "no",
+    "contradictory": "no",
+    "evidence_action": "retrieve"
+   },
+   "decider": {
+    "evidence_sufficient": {
+     "label": "no",
+     "confidence": 0.8455
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 0.6826
+    },
+    "evidence_action": {
+     "label": "retrieve",
+     "confidence": 0.8491
+    }
+   },
+   "decider_ms": 3338.7697500002105,
+   "decider_server_ms": 2535.4,
+   "llm": {
+    "evidence_sufficient": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "evidence_action": {
+     "label": "retrieve",
+     "confidence": 1.0
+    }
+   },
+   "llm_ms": 20928.555292004603,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 8,
+   "expected": {
+    "evidence_sufficient": "yes",
+    "contradictory": "no",
+    "evidence_action": "answer"
+   },
+   "decider": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 0.913
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 0.9062
+    },
+    "evidence_action": {
+     "label": "answer",
+     "confidence": 0.8188
+    }
+   },
+   "decider_ms": 3683.580457989592,
+   "decider_server_ms": 2673.8,
+   "llm": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 1.0
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "evidence_action": {
+     "label": "answer",
+     "confidence": 1.0
+    }
+   },
+   "llm_ms": 21199.68229200458,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 9,
+   "expected": {
+    "evidence_sufficient": "yes",
+    "contradictory": "no",
+    "evidence_action": "answer"
+   },
+   "decider": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 0.9171
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 0.8917
+    },
+    "evidence_action": {
+     "label": "answer",
+     "confidence": 0.9014
+    }
+   },
+   "decider_ms": 3271.6964169958374,
+   "decider_server_ms": 2534.3,
+   "llm": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 0.95
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "evidence_action": {
+     "label": "answer",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 21401.7600419902,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 10,
+   "expected": {
+    "evidence_sufficient": "no",
+    "contradictory": "yes",
+    "evidence_action": "abstain"
+   },
+   "decider": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 0.9613
+    },
+    "contradictory": {
+     "label": "yes",
+     "confidence": 0.7827
+    },
+    "evidence_action": {
+     "label": "answer",
+     "confidence": 0.8056
+    }
+   },
+   "decider_ms": 3854.8239590018056,
+   "decider_server_ms": 3105.5,
+   "llm": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 1.0
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "evidence_action": {
+     "label": "answer",
+     "confidence": 1.0
+    }
+   },
+   "llm_ms": 22354.77770899888,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 11,
+   "expected": {
+    "evidence_sufficient": "no",
+    "contradictory": "no",
+    "evidence_action": "abstain"
+   },
+   "decider": {
+    "evidence_sufficient": {
+     "label": "no",
+     "confidence": 0.794
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 0.7009
+    },
+    "evidence_action": {
+     "label": "retrieve",
+     "confidence": 0.5528
+    }
+   },
+   "decider_ms": 3648.7921249936335,
+   "decider_server_ms": 2904.0,
+   "llm": {
+    "evidence_sufficient": {
+     "label": "no",
+     "confidence": 0.95
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "evidence_action": {
+     "label": "retrieve",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 21499.235708004562,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 12,
+   "expected": {
+    "evidence_sufficient": "yes",
+    "contradictory": "no",
+    "evidence_action": "answer"
+   },
+   "decider": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 0.9079
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 0.8551
+    },
+    "evidence_action": {
+     "label": "answer",
+     "confidence": 0.7911
+    }
+   },
+   "decider_ms": 3293.1672499980778,
+   "decider_server_ms": 2540.9,
+   "llm": {
+    "evidence_sufficient": {
+     "label": "yes",
+     "confidence": 1.0
+    },
+    "contradictory": {
+     "label": "no",
+     "confidence": 1.0
+    },
+    "evidence_action": {
+     "label": "answer",
+     "confidence": 1.0
+    }
+   },
+   "llm_ms": 22156.59158299968,
+   "llm_cost": 0.0
+  }
+ ],
+ "summary": {
+  "decider": {
+   "accuracy": 0.7949,
+   "decisions": 39,
+   "per_question": {
+    "evidence_sufficient": 0.7692,
+    "contradictory": 1.0,
+    "evidence_action": 0.6154
+   },
+   "latency_p50_ms": 3683.6,
+   "latency_p95_ms": 4224.3,
+   "usd_per_1k_decisions": 0.035,
+   "confident_share": 0.7949,
+   "accuracy_when_confident": 0.871,
+   "sent_to_human_at_threshold": 8
+  },
+  "llm": {
+   "accuracy": 0.7692,
+   "decisions": 39,
+   "per_question": {
+    "evidence_sufficient": 0.7692,
+    "contradictory": 0.8462,
+    "evidence_action": 0.6923
+   },
+   "latency_p50_ms": 22354.8,
+   "latency_p95_ms": 49804.8,
+   "usd_per_1k_decisions": 0.0,
+   "confident_share": 1.0,
+   "accuracy_when_confident": 0.7692,
+   "sent_to_human_at_threshold": 0
+  },
+  "speedup_p50": 6.07
+ },
+ "threshold": 0.7,
+ "llm_model": "qwen3.5-4b",
+ "llm_provider": "ugmdu",
+ "llm_where": "AWS User Group Madurai cloud (qwen3.5-4b)",
+ "decider_url": "https://da25tnxy06gjk.cloudfront.net",
+ "decider_mode": "ugmdu",
+ "ran_at": 1792689221.3510568,
+ "split": "test"
+}
